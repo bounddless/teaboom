@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teaboom</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <main class="product-page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a class="breadcrumbs__link" href="#">Каталог</a>
+            <span class="breadcrumbs__separator">-</span>
+
+            <a class="breadcrumbs__link" href="#">Улун</a>
+            <span class="breadcrumbs__separator">-</span>
+
+            <span class="breadcrumbs__current" aria-current="page">
+                Ананасовый улун
+            </span>
+        </nav>
+        <section class="product">
+            <div class="product-card">
+                <h1 class="product-card__name">Ананасовый улун</h1>
+                <div class="product-card__img">
+                    <img class="product-card__image" src="./assets/ananas-ulun.png" alt="Ананасовый улун">
+                </div>
+            </div>
+            <div class="product-purchase">
+                <h3 class="product-purchase__heading">Выберите фасовку</h3>
+                <div class="product-purchase__sizes">
+                    <button type="button" 
+                        class="product-purchase__size button--active" 
+                        data-price="326.40"
+                        data-old-price="349.20" 
+                        data-article="01306">
+                        100 грамм
+                    </button>
+
+                    <button type="button"
+                        class="product-purchase__size"
+                        data-price="1432"
+                        data-old-price="1646"
+                        data-article="01307">
+                        500 грамм
+                    </button>
+
+                    <button type="button"
+                        class="product-purchase__size"
+                        data-price="2064"
+                        data-old-price="2592"
+                        data-article="01308">
+                        1 кг
+                    </button>
+
+                    <button type="button"
+                        class="product-purchase__size"
+                        data-price="6320"
+                        data-old-price="8710"
+                        data-article="01309">
+                        5 кг
+                    </button>
+                </div>
+                <hr class="product-purchase__separator">
+                <div class="product-purchase__price">
+                    <p class="product-purchase__article">Артикул: 01306</p>
+
+                    <div class="product-purchase__price-value">
+                        <span class="product-purchase__price-current">326.40 ₽</span>
+                        <span class="product-purchase__price-old">349.20 ₽</span>
+                    </div>
+                </div>
+                <div class="product-purchase__buttons">
+                    <button type="button" class="product-purchase__button-cart">В корзину</button>
+                    <button type="button" class="product-purchase__button-favorite">В избранное</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="product-info">
+            <nav class="product-info__nav">
+                <button type="button" class="product-info__tab product-info__tab--active" data-tab="description">Описание</button>
+                <button type="button" class="product-info__tab" data-tab="ingredients">Состав</button>
+                <button type="button" class="product-info__tab" data-tab="usage">Отзывы</button>
+            </nav>
+            <hr class="product-info__separator">
+            <div class="product-info__content">
+                <p class="product-info__description">
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
